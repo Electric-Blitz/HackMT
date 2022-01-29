@@ -120,7 +120,7 @@ public class MoveRecorder : MonoBehaviour
         return targets[y][d];
     }
 
-    public EntityTypes getPosition(int y)
+    public EntityTypes getUnit(int y)
     {
         return units[y];
     }

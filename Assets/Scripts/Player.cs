@@ -15,25 +15,25 @@ public class Player : MonoBehaviour
 
     public void MovementDown()      //Down uses it
     {
-        if(map.moveCurPlayer(2) == true)
+        //if(map.moveCurPlayer(2) == true)
             transform.position += new Vector3(0.0f, 0.0f, -2.0f);
     }
 
     public void MovementUp()     //Up uses it
     {
-        if (map.moveCurPlayer(8) == true)
+        //if (map.moveCurPlayer(8) == true)
             transform.position += new Vector3(0.0f, 0.0f, 2.0f);
     }
 
     public void MovementRight()        //Right uses it
     {
-        if (map.moveCurPlayer(6) == true)
+        //if (map.moveCurPlayer(6) == true)
             transform.position += new Vector3(2.0f, 0.0f, 0.0f);
     }
 
     public void MovementLeft()      //Left uses it
     {
-        if (map.moveCurPlayer(4) == true)
+        //if (map.moveCurPlayer(4) == true)
             transform.position += new Vector3(-2.0f, 0.0f, 0.0f);
     }
 

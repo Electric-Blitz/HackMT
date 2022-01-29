@@ -4015,6 +4015,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 563312878}
     m_Modifications:
+    - target: {fileID: 859003304196314307, guid: 33ac216c339e40144bfb6ee493ad6742, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 859003304196314307, guid: 33ac216c339e40144bfb6ee493ad6742, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 31.91
+      objectReference: {fileID: 0}
     - target: {fileID: 7790781567696549174, guid: 33ac216c339e40144bfb6ee493ad6742, type: 3}
       propertyPath: m_Name
       value: Home
@@ -5082,14 +5090,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071567936}
-  m_LocalRotation: {x: 0.039730288, y: -0.59414905, z: 0.033450663, w: 0.8026765}
-  m_LocalPosition: {x: 195.7, y: 17.8, z: -12.8}
+  m_LocalRotation: {x: 0.058665935, y: 0.21604846, z: -0.013005923, w: 0.97453177}
+  m_LocalPosition: {x: -125, y: 2.2, z: 8.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 5.943, y: -72.999, z: 0.374}
+  m_LocalEulerAnglesHint: {x: 6.89, y: 25, z: 0}
 --- !u!114 &2071567940
 MonoBehaviour:
   m_ObjectHideFlags: 0

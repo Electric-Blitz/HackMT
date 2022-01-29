@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    bool[50, 50] O;
+    public Map map;
+    bool[,] O = new bool[50,50];
 
     public void BuildHouse()
     {
@@ -18,7 +19,7 @@ public class Spawner : MonoBehaviour
 
     public void BuildTower()
     {
-
+        
     }
 
     public void BuildPlayer()
@@ -29,7 +30,7 @@ public class Spawner : MonoBehaviour
             {
                 O[i,j] = true;
 
-                if (PosVal(i, j) != Empty)
+                if (map.PosVal(i, j) != EntityTypes.Empty)
                     O[i,j] = false;
                                                                         //Checks for houses
                 if (!(Next2House(i,j)))
@@ -40,7 +41,7 @@ public class Spawner : MonoBehaviour
 
     private bool Next2House(int i, int j)
     {
-        return (PosVal(i - 1, j) == AHouse || PosVal(i, j - 1) == AHouse || PosVal(i + 1, j) == AHouse || PosVal(i, j + 1) == AHouse);
+        return (map.PosVal(i - 1, j) == EntityTypes.AHouse || map.PosVal(i, j - 1) == EntityTypes.AHouse || map.PosVal(i + 1, j) == EntityTypes.AHouse || map.PosVal(i, j + 1) == EntityTypes.AHouse);
     }
 
     //public void BuildEnemy()

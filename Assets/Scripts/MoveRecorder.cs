@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public enum Action
 {
@@ -17,8 +18,9 @@ public class MoveRecorder : MonoBehaviour
     private List<int[]> spawns;
     private List<EntityTypes> units;
     private List<int[][]> positions;
-    private int maxDays = 20;
-    private int year = 0;
+    private int maxDays = 5;
+    private int year = -1;
+    private TextMeshProUGUI yearLabel;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,8 @@ public class MoveRecorder : MonoBehaviour
         spawns = new List<int[]>();
         units = new List<EntityTypes>();
         positions = new List<int[][]>();
+        yearLabel = GameObject.Find("Year Label").GetComponent<TextMeshProUGUI>();
+        newYear();
     }
 
     // Update is called once per frame
@@ -41,9 +45,10 @@ public class MoveRecorder : MonoBehaviour
         moves.Add(new Action[maxDays]);
         for (int i = 0; i < maxDays; i++)
         {
-            moves[year][i] = Action.Still;
+            moves[year + 1][i] = Action.Still;
         }
         year = year + 1;
+        yearLabel.SetText("Year " + (year + 1).ToString());
     }
 
     public void setDay(int d, Action act)

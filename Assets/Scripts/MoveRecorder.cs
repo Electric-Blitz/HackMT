@@ -4,10 +4,7 @@ using UnityEngine;
 
 public enum Action
 {
-    Up,
-    Down,
-    Left,
-    Right,
+    Move,
     Ability,
     Still,
 }

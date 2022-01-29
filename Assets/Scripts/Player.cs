@@ -11,8 +11,9 @@ public class Player : MonoBehaviour
     public KeyCode right = KeyCode.D;
     public GameObject player;
     public Map map;
+    public Vector3 locale;
 
-public void MovementDown()      //Down uses it
+    public void MovementDown()      //Down uses it
     {
         if(map.moveCurPlayer(2) == true)
             transform.position += new Vector3(0.0f, 0.0f, -2.0f);
@@ -36,11 +37,10 @@ public void MovementDown()      //Down uses it
             transform.position += new Vector3(-2.0f, 0.0f, 0.0f);
     }
 
-    // Start is called before the first frame update
-    //void Start()
-    //{
-        
-    //}
+    public void PlayerLocale()
+    {
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -61,5 +61,7 @@ public void MovementDown()      //Down uses it
         {
             MovementRight();
         }
-}
+
+
+    }
 }

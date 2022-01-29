@@ -61,7 +61,7 @@ public class Map : MonoBehaviour
         }
     }
 
-    public EntityTypes PosVal(int x, int y)
+    public EntityTypes PosVal(int x, int y) //return enum type in pos [x,y]
     {
         return M[x, y];
     }
@@ -154,6 +154,33 @@ public class Map : MonoBehaviour
                 break;
         }
     }
+
+    public bool moveCurPlayer(int space)
+    {
+        if(space == 2)
+            {
+
+            }
+
+        if (space == 4)
+            {
+
+            }
+
+        if (space == 6)
+            {
+
+            }
+
+        if (space == 8)
+            {
+
+            }
+
+        return false;
+    }
+
+
     //takes EMelee, ERanged, and EBuilder
     public void setEnemy(int x, int y, EntityTypes set)
     {

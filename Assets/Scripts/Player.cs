@@ -10,25 +10,30 @@ public class Player : MonoBehaviour
     public KeyCode left = KeyCode.A;
     public KeyCode right = KeyCode.D;
     public GameObject player;
+    public Map map;
 
 public void MovementDown()      //Down uses it
     {
-        transform.position += new Vector3(0.0f, 0.0f, -2.0f);
+        if(map.moveCurPlayer(2) == true)
+            transform.position += new Vector3(0.0f, 0.0f, -2.0f);
     }
 
     public void MovementUp()     //Up uses it
     {
-        transform.position += new Vector3(0.0f, 0.0f, 2.0f);
+        if (map.moveCurPlayer(8) == true)
+            transform.position += new Vector3(0.0f, 0.0f, 2.0f);
     }
 
     public void MovementRight()        //Right uses it
     {
-        transform.position += new Vector3(2.0f, 0.0f, 0.0f);
+        if (map.moveCurPlayer(6) == true)
+            transform.position += new Vector3(2.0f, 0.0f, 0.0f);
     }
 
     public void MovementLeft()      //Left uses it
     {
-        transform.position += new Vector3(-2.0f, 0.0f, 0.0f);
+        if (map.moveCurPlayer(4) == true)
+            transform.position += new Vector3(-2.0f, 0.0f, 0.0f);
     }
 
     // Start is called before the first frame update

@@ -5,14 +5,14 @@ using UnityEngine;
 public enum EntityTypes
 {
     Empty,
-    Wall,
+    Wall,       //Edge of map
     ResourceStone,
     ResourceWood,
     ABuilder,
     AMelee,
     AGatherer,
     ARanged,
-    AHouse,
+    AHouse,     //Allied House
     ADefensive,
     AStockpile,
     EBuilder,

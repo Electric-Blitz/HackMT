@@ -70,7 +70,7 @@ public class Map : MonoBehaviour
     {
         Vector3 finalPos;
         finalPos.x = (float)x * spacing;
-        finalPos.y = 1;
+        finalPos.y = 0.1f;
         finalPos.z = (float)y * spacing;
         return finalPos;
     }
